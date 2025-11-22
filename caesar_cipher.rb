@@ -8,7 +8,7 @@ def caesar_cipher(string, shift)
   return nil if shift < 0
   return string if shift % ALPHABET_LENGTH == 0
 
-  string_array = string.split("")
+  string_array = string.split ""
   
   result_array = string_array.collect do |character|
     code = character.ord
@@ -27,5 +27,5 @@ def caesar_cipher(string, shift)
     end
   end
 
-  result_array.join("")
+  result_array.join
 end
